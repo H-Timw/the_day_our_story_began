@@ -5,11 +5,206 @@
   --foreground: #171717;
 }
 
+@theme {
+  --*: initial;
+
+  /* breakpoint */
+  --breakpoint-*: initial;
+  --breakpoint-mobile: 375px;
+
+  /* text */
+  --text-sm: 14px;
+  --text-sm--line-height: 140%;
+  --text-md: 16px;
+  --text-md--line-height: 150%;
+  --text-lg: 18px;
+  --text-lg--line-height: 150%;
+
+  /* COLOR SCHEME */
+  /* color slate */
+  --color-primitive-slate-50:#F8FAFC;
+  --color-primitive-slate-100:#F1F5F9;
+  --color-primitive-slate-200:#E2E8F0;
+  --color-primitive-slate-300:#cad5e2;
+  --color-primitive-slate-400:#90a1b9;
+  --color-primitive-slate-500:#62748e;
+  --color-primitive-slate-600:#45556c;
+  --color-primitive-slate-700:#314158;
+  --color-primitive-slate-800:#1d293d;
+  --color-primitive-slate-900:#0f172b;
+  --color-primitive-slate-950:#020618;
+  /* color orange */
+  --color-primitive-orange-50:#fff7ed;
+  --color-primitive-orange-100:#ffedd4;
+  --color-primitive-orange-200:#ffd6a7;
+  --color-primitive-orange-300:#ffb86a;
+  --color-primitive-orange-400:#ff8904;
+  --color-primitive-orange-500:#ff6900;
+  --color-primitive-orange-600:#f54900;
+  --color-primitive-orange-700:#ca3500;
+  --color-primitive-orange-800:#9f2d00;
+  --color-primitive-orange-900:#7e2a0c;
+  --color-primitive-orange-950:#441306;
+  /* color teal */
+  --color-primitive-teal-50:#f0fdfa;
+  --color-primitive-teal-100:#cbfbf1;
+  --color-primitive-teal-200:#96f7e4;
+  --color-primitive-teal-300:#46ecd5;
+  --color-primitive-teal-400:#00d5be;
+  --color-primitive-teal-500:#00bba7;
+  --color-primitive-teal-600:#009689;
+  --color-primitive-teal-700:#00786f;
+  --color-primitive-teal-800:#005f5a;
+  --color-primitive-teal-900:#0b4f4a;
+  --color-primitive-teal-950:#022f2e;
+  /* color indigo */
+  --color-primitive-indigo-50:#eef2ff;
+  --color-primitive-indigo-100:#e0e7ff;
+  --color-primitive-indigo-200:#c6d2ff;
+  --color-primitive-indigo-300:#a3b3ff;
+  --color-primitive-indigo-400:#7c86ff;
+  --color-primitive-indigo-500:#615fff;
+  --color-primitive-indigo-600:#4f39f6;
+  --color-primitive-indigo-700:#432dd7;
+  --color-primitive-indigo-800:#372aac;
+  --color-primitive-indigo-900:#312c85;
+  --color-primitive-indigo-950:#1e1a4d;
+  /* color purple */
+  --color-primitive-purple-50:#faf5ff;
+  --color-primitive-purple-100:#f3e8ff;
+  --color-primitive-purple-200:#e9d4ff;
+  --color-primitive-purple-300:#dab2ff;
+  --color-primitive-purple-400:#c27aff;
+  --color-primitive-purple-500:#ad46ff;
+  --color-primitive-purple-600:#9810fa;
+  --color-primitive-purple-700:#8200db;
+  --color-primitive-purple-800:#6e11b0;
+  --color-primitive-purple-900:#59168b;
+  --color-primitive-purple-950:#3c0366;
+  /* color rose */
+  --color-primitive-rose-50:#fff1f2;
+  --color-primitive-rose-100:#ffe4e6;
+  --color-primitive-rose-200:#ffccd2;
+  --color-primitive-rose-300:#ffa1ad;
+  --color-primitive-rose-400:#ff637e;
+  --color-primitive-rose-500:#ff2056;
+  --color-primitive-rose-600:#ec003f;
+  --color-primitive-rose-700:#c60036;
+  --color-primitive-rose-800:#a50036;
+  --color-primitive-rose-900:#8b0836;
+  --color-primitive-rose-950:#4d0218;
+
+  /* COLOR SYSTEM */
+  /* color gray */
+  --color-primitive-gray-50:#ffffff;
+  --color-primitive-gray-100:#f5f5f5;
+  --color-primitive-gray-200:#e5e5e5;
+  --color-primitive-gray-300:#d1d5dc;
+  --color-primitive-gray-400:#d4d4d4;
+  --color-primitive-gray-500:#a1a1a1;
+  --color-primitive-gray-600:#737373;
+  --color-primitive-gray-700:#525252;
+  --color-primitive-gray-800:#404040;
+  --color-primitive-gray-900:#171717;
+  --color-primitive-gray-950:#0a0a0a;
+  /* color red */
+  --color-primitive-red-50:#fef2f2;
+  --color-primitive-red-100:#ffe2e2;
+  --color-primitive-red-200:#ffc9c9;
+  --color-primitive-red-300:#ffa2a2;
+  --color-primitive-red-400:#ff6467;
+  --color-primitive-red-500:#fb2c36;
+  --color-primitive-red-600:#e7000b;
+  --color-primitive-red-700:#c10007;
+  --color-primitive-red-800:#9f0712;
+  --color-primitive-red-900:#82181a;
+  --color-primitive-red-950:#460809;
+  /* color green */
+  --color-primitive-green-50:#f0fdf4;
+  --color-primitive-green-100:#dcfce7;
+  --color-primitive-green-200:#b9f8cf;
+  --color-primitive-green-300:#7bf1a7;
+  --color-primitive-green-400:#05df72;
+  --color-primitive-green-500:#00c950;
+  --color-primitive-green-600:#00a63e;
+  --color-primitive-green-700:#008235;
+  --color-primitive-green-800:#016630;
+  --color-primitive-green-900:#0d542b;
+  --color-primitive-green-950:#032e15;
+  /* color yellow */
+  --color-primitive-yellow-50:#fefce8;
+  --color-primitive-yellow-100:#fef9c2;
+  --color-primitive-yellow-200:#fff085;
+  --color-primitive-yellow-300:#ffdf20;
+  --color-primitive-yellow-400:#fdc700;
+  --color-primitive-yellow-500:#f0b100;
+  --color-primitive-yellow-600:#d08700;
+  --color-primitive-yellow-700:#a65f00;
+  --color-primitive-yellow-800:#894b00;
+  --color-primitive-yellow-900:#733e0a;
+  --color-primitive-yellow-950:#432004;
+
+  /* color theme */
+  --color-theme-stroke: #314158;
+  --color-theme-foreground: #90A1B9;
+  --color-theme-background: #0f172b;
+  --color-theme-backdrop: #020618;
+  --color-heading-foreground:#f8fafc;
+  --color-primary-background: #ffb86a;
+  --color-theme-link-foreground: #FFA1AD;
+
+  /* spacing */
+  --spacing: 2px;
+  /* that spacing was disable because the gap-x not using calc(--spacing * x),
+  it using calc(--spacing-x) => the document from tailwind v4 is not true now
+  --spacing-1: 2px;
+  --spacing-2: 4px;
+  --spacing-3: 8px;
+  --spacing-4: 12px;
+  --spacing-5: 16px;
+  --spacing-6: 24px;
+  --spacing-7: 32px;
+  --spacing-8: 40px;
+  --spacing-9: 48px;
+  --spacing-10: 64px; */
+
+  /* border-radius */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-lg: 8px;
+  --radius-2xl: 16px;
+}
+@layer base {
+  h1 {
+    font-size: 60px;
+    line-height: 66px;
+  }
+  h2 {
+    font-size: 48px;
+    line-height: 120%;
+  }
+  h3 {
+    font-size: 36px;
+    line-height: 130%;
+  }
+  h4 {
+    font-size: 30px;
+    line-height: 140%; 
+  }
+  h5 {
+    font-size: 24px;
+    line-height: 140%;
+  }
+  h6 {
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-fira: var(--font-fira-code);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +215,10 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-fira-code);
 }
+
+button, a {
+  cursor: pointer;
+}
+
